@@ -1,0 +1,23 @@
+{
+  "pricings": {
+    "headshot": {
+      "base": 30,
+      "addition": 25
+    },
+    "halfbody": {
+      "base": 40,
+      "addition": 35
+    },
+    "fullbody": {
+      "base": 50,
+      "addition": 40
+    }
+  },
+  "addons": {
+    "background": {
+      "simple": 30,
+      "moderate": 40,
+      "detailed": 50
+    }
+  }
+}

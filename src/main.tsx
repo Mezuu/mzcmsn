@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import { Home } from './routes/Home.tsx'
-import { Root } from './routes/Root.tsx'
+import { Home } from './pages/Home.tsx'
+import { Root } from './pages/Root.tsx'
+import { CssVarsProvider } from '@mui/joy'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CssVarsProvider defaultMode='dark'>
+        <RouterProvider router={router} />
+    </CssVarsProvider>
   </React.StrictMode>,
 )
