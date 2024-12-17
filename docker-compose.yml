@@ -1,0 +1,15 @@
+services:
+  web:
+    image: __IMAGE__
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mezuu-commission.rule=Host(`commission.mezuu.id`)"
+      - "traefik.http.routers.mezuu-commission.entrypoints=web"
+      - "traefik.http.routers.mezuu-commission.service=mezuu-commission"
+      - "traefik.http.services.mezuu-commission.loadbalancer.server.port=3000"
+    networks:
+      - mezuu-network
+
+networks:
+  mezuu-network:
+    external: true

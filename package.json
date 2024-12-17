@@ -40,5 +40,8 @@
     "postcss": "^8.4.32",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-arm64-musl": "^4.28.1"
   }
 }
