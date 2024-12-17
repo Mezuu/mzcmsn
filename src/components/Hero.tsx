@@ -1,4 +1,4 @@
-import { Alert, Button, Sheet, Stack, Typography } from "@mui/joy";
+import { Button, Sheet, Stack, Typography } from "@mui/joy";
 import abstract from '../assets/abstract.jpg'
 import { cubicBezier, motion } from 'framer-motion'
 import { TRANSITION_DELAY } from "../pages/Root";
